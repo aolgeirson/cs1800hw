@@ -68,18 +68,13 @@ $\neg ( \neg (p\land q) \lor \neg (\neg q \land r) )$ \\
 %%%%.  To avoid LaTeX errors, make sure to leave a space after \neg \land \lor as in the sample. (E.g., don't write \negq)
 
 {\color{blue}
-...
-
+1. $\neg ( (\neg p \lor \neg q) \lor \neg (\neg q \land r) ) \rightarrow$ Demorgan's on $\neg (p\land q) $\\
+2. $\neg ( (\neg p \lor \neg q) \lor  (q \lor \neg r) ) \rightarrow$ Demorgan's on $ \neg (\neg q \land r) $\\
+3. $\neg ( \neg p \lor \neg q \lor  q \lor \neg r ) \rightarrow$ Associative Law \\
+4. $p \land q \land  \neg q \land r \rightarrow $ Demorgan's on outer parenthesis \\
+5. $p \land F \land r \rightarrow$ $q \land  \neg q$ annihilates to F \\
+6. $F \rightarrow$ $p \land F \land r$ is always F \\
 }
-
-
-
-
-
-
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
