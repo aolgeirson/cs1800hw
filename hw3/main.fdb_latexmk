@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1778613818.63159 "main.tex" "main.pdf" "main" 1778613819.52639 0
+["pdflatex"] 1778618679.42166 "main.tex" "main.pdf" "main" 1778618679.81125 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1775415801 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1775415801 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -17,14 +17,9 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1775415801 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1775415801 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1775415801 1120 8b7d695260f3cff42e636090a8002094 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1775415801 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1775415801 36741 fa121aac0049305630cf160b86157ee4 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1775415801 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1775415801 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1775415801 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1775415801 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1775415801 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1775415801 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1775415801 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty" 1775415801 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
   "/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty" 1775415801 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -55,12 +50,11 @@
   "/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty" 1775415801 62711 3b0ed1d68b598a75677c10d16646d5e5 ""
   "/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1775415801 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "/usr/share/texmf-dist/tex/latex/tools/calc.sty" 1775415801 10374 2ffd4f27c7f90b8a300608069537743c ""
-  "/usr/share/texmf-dist/tex/latex/url/url.sty" 1775415801 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775497688 327540 ac581ffdae7ebdea96b9c7fc9b150596 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776390142 2328189 31ad15b6ff52e5e183af2db3e40445aa ""
-  "main.aux" 1778613819.44638 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "main.tex" 1778469927.68128 2348 d157531c14f0d9f3438cae0ac609be95 ""
+  "main.aux" 1778618679.75856 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "main.tex" 1778618678.56655 4091 362acdb15228dbd5d1b3d780f1379a7a ""
   (generated)
   "main.aux"
   "main.log"

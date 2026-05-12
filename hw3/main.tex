@@ -24,15 +24,15 @@
 
       %%%%   Omitting the problem statement to reduce clutter      %%%%
 
-%A league has 16 teams.   In the regular season each team plays each other 6 times.
-%The season is played in 90 ``rounds". In  each round every team plays a game. 
-%Each team's  rank is determined by number of wins.   If two teams end up with the same record, their rank is determined via a new tie-breaker game. (What's relevant is that teams that end up with the same record at the end of the regular season have unresolved relative ranks).
-%
-%During the season every team does their best to increase their rank, until possibly reaching a time when they realize that their rank can't change.
-%
-%$\bullet$ What is the earliest possible round at which all teams in the league no longer care about improving their rank?  Equivalently, how large could $r$ be, so that with $r$ regular season rounds remaining none of the teams care? \\
-%$\bullet$ You should include an example of all team win records and justify why all teams no longer care.  \\
-%$\bullet$  You should explain why your value of $r$ couldn't be made larger.  Ideally you should mention the pigeonhole principle.\\
+A league has 16 teams.   In the regular season each team plays each other 6 times.
+The season is played in 90 ``rounds". In  each round every team plays a game. 
+Each team's  rank is determined by number of wins.   If two teams end up with the same record, their rank is determined via a new tie-breaker game. (What's relevant is that teams that end up with the same record at the end of the regular season have unresolved relative ranks).
+
+During the season every team does their best to increase their rank, until possibly reaching a time when they realize that their rank can't change.
+
+$\bullet$ What is the earliest possible round at which all teams in the league no longer care about improving their rank?  Equivalently, how large could $r$ be, so that with $r$ regular season rounds remaining none of the teams care? \\
+$\bullet$ You should include an example of all team win records and justify why all teams no longer care.  \\
+$\bullet$  You should explain why your value of $r$ couldn't be made larger.  Ideally you should mention the pigeonhole principle.\\
 
 
 {\color{blue}
@@ -85,15 +85,16 @@ $\neg ( \neg (p\land q) \lor \neg (\neg q \land r) )$ \\
 %
 % Let $X$ denote a logic operator, defined as 
 Definition:    $a X b = \neg ( a \lor  b)$\\\\
-%Show that we can simulate the following three expressions, with other expressions in which the only operator used is $X$. The expressions shouldn't include T, F or negation either.  You should provide step-by-step derivation with comments. Each change should be on a new line. Each line should be equivalent to the preceding line. \\
+Show that we can simulate the following three expressions, with other expressions in which the only operator used is $X$. The expressions shouldn't include T, F or negation either.  You should provide step-by-step derivation with comments. Each change should be on a new line. Each line should be equivalent to the preceding line. \\
 a) $\neg p$ \\
 
 {\color{blue}
-$\leftrightarrow$
 
-$\leftrightarrow$
+$\neg p \leftrightarrow \neg p \lor \neg p$ as $p\lor p$ is always p
 
-$\leftrightarrow$
+$\neg p \lor \neg p \leftrightarrow \neg (p\lor p)$ by deMorgan's laws
+
+$\neg(p\lor p)\leftrightarrow pXp$ by definition
 
 }
 
@@ -102,7 +103,9 @@ $\leftrightarrow$
 b) $p\lor q$ \\
 
 {\color{blue}
-...
+  $p\lor q \iff \neg (\neg (p\lor q))$ a double logical not cancels out via deMorgan's laws\\ 
+  $\iff \neg(pXq)$ the X operator is defined with a logical not \\ 
+  $\iff (pXq)X(pXq)$ as $pXp \iff \neg p$ as proved above
 
 }
 
@@ -111,7 +114,9 @@ b) $p\lor q$ \\
 c) $p\land q$\\
 
 {\color{blue}
-...
+  All of this is wrong, but the answer is $(pXp)X(qXq)$, I need another take to prove it though
+$p\land q \iff \neg (\neg p \lor \neg q)$ as the preposition $p\land q \leftrightarrow \neg p \lor \neg q$ is false in all cases\\
+$\neg (\neg p \lor \neg q $
 
 }
 
