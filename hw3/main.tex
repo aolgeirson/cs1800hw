@@ -114,9 +114,24 @@ b) $p\lor q$ \\
 c) $p\land q$\\
 
 {\color{blue}
-  All of this is wrong, but the answer is $(pXp)X(qXq)$, I need another take to prove it though
-$p\land q \iff \neg (\neg p \lor \neg q)$ as the preposition $p\land q \leftrightarrow \neg p \lor \neg q$ is false in all cases\\
-$\neg (\neg p \lor \neg q $
+$p\land q \leftrightarrow \neg((\neg(p\lor p))\lor(\neg(q\lor q))$ assumed for the sake of argument \\
+$(\neg p) X (\neg q) \leftrightarrow \neg (\neg p \lor \neg q) $ as $pXp \leftrightarrow \neg p$, which was proven above \\
+$\neg(\neg p \lor \neg q) \leftrightarrow p\land q $ via truth table as:\\\\
+\begin{array}{|c c|c|}
+  p & q & \neg(\neg p \lor \neg q)\\
+  \hline
+  T & T & T \\
+  T & F & F \\
+  F & T & F \\
+  F & F & F\\
+\end{array} \iff \begin{array}{|c c|c|}
+  p & q & p\land q\\
+  \hline
+  T & T & T \\
+  T & F & F \\
+  F & T & F \\
+  F & F & F\\
+\end{array}$$
 
 }
 
