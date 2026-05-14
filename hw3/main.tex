@@ -20,35 +20,51 @@
 \begin{enumerate}
 
 
+% \item
+
+%       %%%%   Omitting the problem statement to reduce clutter      %%%%
+
+% A league has 16 teams.   In the regular season each team plays each other 6 times.
+% The season is played in 90 ``rounds". In  each round every team plays a game. 
+% Each team's  rank is determined by number of wins.   If two teams end up with the same record, their rank is determined via a new tie-breaker game. (What's relevant is that teams that end up with the same record at the end of the regular season have unresolved relative ranks).
+
+% During the season every team does their best to increase their rank, until possibly reaching a time when they realize that their rank can't change.
+
+% $\bullet$ What is the earliest possible round at which all teams in the league no longer care about improving their rank?  Equivalently, how large could $r$ be, so that with $r$ regular season rounds remaining none of the teams care? \\
+% $\bullet$ You should include an example of all team win records and justify why all teams no longer care.  \\
+% $\bullet$  You should explain why your value of $r$ couldn't be made larger.  Ideally you should mention the pigeonhole principle.\\
+
+
 \item
 
-      %%%%   Omitting the problem statement to reduce clutter      %%%%
-
-A league has 16 teams.   In the regular season each team plays each other 6 times.
-The season is played in 90 ``rounds". In  each round every team plays a game. 
-Each team's  rank is determined by number of wins.   If two teams end up with the same record, their rank is determined via a new tie-breaker game. (What's relevant is that teams that end up with the same record at the end of the regular season have unresolved relative ranks).
-
-During the season every team does their best to increase their rank, until possibly reaching a time when they realize that their rank can't change.
-
-$\bullet$ What is the earliest possible round at which all teams in the league no longer care about improving their rank?  Equivalently, how large could $r$ be, so that with $r$ regular season rounds remaining none of the teams care? \\
-$\bullet$ You should include an example of all team win records and justify why all teams no longer care.  \\
-$\bullet$  You should explain why your value of $r$ couldn't be made larger.  Ideally you should mention the pigeonhole principle.\\
-
-
 {\color{blue}
-Largest valid value of $r$:  
+Largest valid value of $r$:  \\
 
-
+$r=4$
 \vskip1cm
-
 Example of win records: \\
 
-Justification: 
+81,76,71,66,61,56,51,46,40,35,30,25,20,15,10,5\\
 
+Justification: \\
 
-\vskip2cm
-Larger values of $r$ wouldn't work because ...
+The teams must be ranked s.t. $W_1 > W_2 > W_3 > ... > W_{16}$, where $W_i$ is the number of wins of team $i$.  \\
+16 total teams means there are 15 gaps between the teams.\\
+For no team to care about improving their rank, the gap between each team must be at least r+1 which leads to: 
+$W_1 - W_{16} \geq 15(r+1)$\\
+After 90 - r rounds, the largest possible difference between the first and last team is: 
+$90-r \geq 15(r+1)$\\
+Solving this inequality for r gives $r \leq 4.6875$.\\
+And because r must be an integer, $r=4$ is the largest valid value of r.\\
 
+\vskip1cm
+The pigeonhole principle is shows why r cannot be made larger than 4.\\
+If r were 5, with 15 gaps between the teams, there would need to be a total spread of 90: $15\cdot 6 = 90$. \\
+But with only 5 rounds remaining, the maximum spread is 85.\\
+Thus, if we take the possible win totals of the teams as the holes and the teams as the pigeons, then, with 5 rounds remaining,
+there are only 86 possible win totals (0 through 85).\\
+For no team to care about improving their rank, team wins must differ by at least 6, which means that there can only be 15 possible win totals (0,6,12,...,90).\\
+Thus, there are not enough holes to place all 16 teams while maintaing the required spacing of wins.\\
 }
 
 
@@ -117,21 +133,30 @@ c) $p\land q$\\
 $p\land q \leftrightarrow \neg((\neg(p\lor p))\lor(\neg(q\lor q))$ assumed for the sake of argument \\
 $(\neg p) X (\neg q) \leftrightarrow \neg (\neg p \lor \neg q) $ as $pXp \leftrightarrow \neg p$, which was proven above \\
 $\neg(\neg p \lor \neg q) \leftrightarrow p\land q $ via truth table as:\\\\
-\begin{array}{|c c|c|}
-  p & q & \neg(\neg p \lor \neg q)\\
-  \hline
-  T & T & T \\
-  T & F & F \\
-  F & T & F \\
-  F & F & F\\
-\end{array} \iff \begin{array}{|c c|c|}
-  p & q & p\land q\\
-  \hline
-  T & T & T \\
-  T & F & F \\
-  F & T & F \\
-  F & F & F\\
-\end{array}$$
+
+\[
+\begin{array}{|c|c|c|}
+\hline
+p & q & \neg(\neg p \lor \neg q) \\
+\hline
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & F \\
+\hline
+\end{array}
+\quad \leftrightarrow \quad
+\begin{array}{|c|c|c|}
+\hline
+p & q & p \land q \\
+\hline
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & F \\
+\hline
+\end{array}
+\]
 
 }
 
@@ -143,25 +168,3 @@ $\neg(\neg p \lor \neg q) \leftrightarrow p\land q $ via truth table as:\\\\
 
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
