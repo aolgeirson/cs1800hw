@@ -31,15 +31,17 @@ Prove by strong induction that for every positive integer $n$, proposition $P(n)
 %Don't convert this to contrapositive form before using induction.   The purpose is to practice induction, as is.  \\
 
 {\color{blue}
- Note that I don't think this holds as k might be getting redefined\\
  $Proof:$\\
 By strong induction, assume that $P(k)$ is true for $1\leqslant k \leqslant n-1$\\
-The base case of $n=2$ ($n=1$ produces an odd value for $P(n)$, so it is not a base case) holds as $P(2)=5(2)+3=13$ which is odd, and $2$ is even.\\
-By contrapositive, assume $k+1=2b$ where $b$ is an integer\\
-$k=2b-1$, which is a contradicition thus proving the inductive step through contrapositive.
+The base case of $k=1$ holds as $P(1)=8$ which is even, and $1$ is odd.\\
+As does the base case of $P(2)=13$, which is odd, and $2$ is even.\\
+$5(n-2)+3=(5n+3)-10$\\
+As $5n+3$ is even, as is 10, $5(n-2)+3$ is therefore even. \\
+This proves the inductive hypothesis as $P(n-3)\implies P(n-2)$
 $\blacksquare$
-}
 
+I don't love this proof. If someone wants to touch it up, they are welcome to.
+}
 
 
 
